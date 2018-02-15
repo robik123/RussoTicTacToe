@@ -37,6 +37,14 @@ public class MainActivity extends Activity {
 
     }
 
+    public void Theme_click(View view) {
+
+        Intent myIntent = new Intent(MainActivity.this, ChangeThemeActivity.class);
+        startActivity(myIntent);
+
+
+    }
+
 
     public void exit_click(View view) {
     System.exit(1);

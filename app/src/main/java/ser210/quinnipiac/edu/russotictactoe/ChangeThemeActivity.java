@@ -1,11 +1,15 @@
 package ser210.quinnipiac.edu.russotictactoe;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -23,6 +27,17 @@ public class ChangeThemeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_theme);
+        AlertDialog.Builder feature = new AlertDialog.Builder(this);
+        feature.setTitle("This Feature Has Not Been Added Yet");
+        feature.setCancelable(false);
+        feature.setPositiveButton("Home", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        feature.show();
+
     }
 
     public void changeThemeBright(){

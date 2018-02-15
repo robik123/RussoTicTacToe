@@ -4,9 +4,9 @@
     <string name="empty"> </string>
     <string name="howTo">-When playing against the AI, the user will always start the tic tac toe match!</string>
     <string name="howTo2">-The AI will generate a random move on the board after you have gone!</string>
-    <string name="howTo3">-The turn will be displayed at the bottom of the screen!</string>
+    <string name="howTo3">-Use the reset button to reset the game when someone has won!</string>
     <string name="howTo4">-Good Luck and Have Fun!!</string>
-    <string name="howTo5">-Game Created By Mark Russo SER120</string>
+    <string name="howTo5">-Game Created By Mark Russo SER210</string>
 
 
     <string name="theme"></string>

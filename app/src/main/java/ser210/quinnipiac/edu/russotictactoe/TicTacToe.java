@@ -1,24 +1,10 @@
 package ser210.quinnipiac.edu.russotictactoe;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.text.InputType;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TextView;
-
-import java.util.Random;
-
-import javax.xml.transform.Result;
-
 /**
- * Created by markrusso on 2/12/18.
+ * Created by Mark Russo on 2/12/18.
+ * Class Implements ITicTacToe
+ * Methods are called in TTTActivity
+ * SER210
  */
 
 public class TicTacToe implements ITicTacToe{
@@ -31,6 +17,7 @@ public class TicTacToe implements ITicTacToe{
 
 
     // Set up the game board and make moves
+    //called through TTTActivity
     public void setMove(int player, int location) {
         if (player == 1) {
             if (location == 0) {
@@ -84,9 +71,6 @@ public class TicTacToe implements ITicTacToe{
                 }
 
             }
-        } else if (player == 2) {
-            getComputerMove();
-
         }
     }
 
@@ -143,7 +127,6 @@ public class TicTacToe implements ITicTacToe{
             }
         }
         return computerMove;
-
     }
 
 
@@ -217,16 +200,10 @@ public class TicTacToe implements ITicTacToe{
                 && board[2][2] != EMPTY) {
             return 3;
         }
+
         //game is playing
         return 0;
     }
-
-
-//    public void onClickClear(View view){
-//        if (winner == true) {
-//            clearBoard();
-//        }
-//    }
 
     //clears the board and sets the board positions back to the start
     public void clearBoard(){
@@ -241,7 +218,5 @@ public class TicTacToe implements ITicTacToe{
         board[2][2] = EMPTY;
 
     }
-
-
 }
 
