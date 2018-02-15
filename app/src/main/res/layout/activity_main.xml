@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6c03da0e"
+    android:id="@+id/menuTheme"
+    tools:context="ser210.quinnipiac.edu.russotictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Tic Tac Toe!"
+        android:textSize="33dp"
+        android:textColor="#000"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/mulitplayer"
+        android:layout_alignStart="@+id/mulitplayer"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="10dp"
+        android:background="#f2f2f2"
+        android:onClick="onClickPlay"
+        android:paddingTop="10dp"
+        android:text="Lets Play!"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/mulitplayer"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/howToPlay"
+        android:layout_alignStart="@+id/howToPlay"
+        android:layout_below="@+id/play"
+        android:background="#f2f2f2"
+        android:layout_marginTop="15dp"
+        android:onClick="onClickMulitplayer"
+        android:text="Multiplayer"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/howToPlay"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/theme"
+        android:layout_alignStart="@+id/theme"
+        android:layout_below="@+id/mulitplayer"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2"
+        android:onClick="onClickHowToPlay"
+        android:text="How to Play"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/theme"
+        android:paddingTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/howToPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="Theme_click"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:background="#f2f2f2"
+        android:text="Change Theme" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/theme"
+        android:layout_alignStart="@+id/theme"
+        android:layout_below="@+id/theme"
+        android:layout_marginTop="25dp"
+        android:background="#f2f2f2"
+        android:onClick="exit_click"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textColor="#7c0606"
+        android:textSize="50dp" />
+
+
+
+</RelativeLayout>

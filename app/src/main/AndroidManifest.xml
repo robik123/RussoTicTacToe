@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ser210.quinnipiac.edu.russotictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HowToPlayActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".MultiplayerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ChangeThemeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".TTTActivity"
+            android:configChanges="orientation|screenSize">
+
+
+        </activity>
+    </application>
+
+</manifest>

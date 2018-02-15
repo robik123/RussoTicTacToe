@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ser210.quinnipiac.edu.russotictactoe.HowToPlayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/howto"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howTo"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:background="#e2e2e2"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="129dp" />
+        <TextView
+            android:id="@+id/howto2"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howTo2"
+            android:textSize="30dp"
+            android:layout_below="@id/howto"
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+        <TextView
+            android:id="@+id/howto3"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howTo3"
+            android:textSize="30dp"
+            android:layout_below="@id/howto2"
+            android:textColor="#000"
+            android:background="#e2e2e2"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+        <TextView
+            android:id="@+id/howto4"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howTo4"
+            android:textSize="30dp"
+            android:layout_below="@id/howto3"
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+
+        <TextView
+            android:id="@+id/howto5"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howTo5"
+            android:textSize="30dp"
+            android:layout_below="@id/howto4"
+            android:textColor="#000"
+            android:background="#e2e2e2"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

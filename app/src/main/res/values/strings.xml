@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RussoTicTacToe</string>
+    <string name="play">game_click</string>
+    <string name="empty"> </string>
+    <string name="howTo">-When playing against the AI, the user will always start the tic tac toe match!</string>
+    <string name="howTo2">-The AI will generate a random move on the board after you have gone!</string>
+    <string name="howTo3">-The turn will be displayed at the bottom of the screen!</string>
+    <string name="howTo4">-Good Luck and Have Fun!!</string>
+    <string name="howTo5">-Game Created By Mark Russo SER120</string>
+
+
+    <string name="theme"></string>
+    <string-array name="theme">
+        <item>Bright</item>
+        <item>Dark</item>
+        <item>scary</item>
+    </string-array>
+</resources>
