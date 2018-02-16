@@ -6,13 +6,12 @@ package ser210.quinnipiac.edu.russotictactoe;
  * Methods are called from TicTacToe.java
  * SER210
  */
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -21,13 +20,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class TTTActivity extends Activity {
-    public String userName;
-    public TextView result;
-    boolean winner = false;
+    //instance variables
+    private String userName;
+    private TextView result;
+    private boolean winner = false;
     private TicTacToe game = new TicTacToe();
-    int count = 0;
-    int currentState = ITicTacToe.PLAYING;
-    int loc;
+    private int count = 0;
+    private int currentState = ITicTacToe.PLAYING;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +84,6 @@ public class TTTActivity extends Activity {
                     return;
                 }
                 // btn.setBackgroundResource(R.drawable.ex);
-                // loc = id;
                 move.setText("Players Turn");
                 if (view.getId() == btn1.getId()) {
                     game.setMove(1, 0);
@@ -136,15 +134,13 @@ public class TTTActivity extends Activity {
                 }
                 if (view.getId() == btn9.getId()) {
                     findViewById(R.id.nine).setBackgroundResource(R.drawable.ex);
-                    loc = 0;
                     game.setMove(1, 8);
                     btn9.setTag("X");
 
                 }
                 checkForWinner();
-
-                //if there is still a spot available the computer will make its move
                 count++;
+                //if there is still a spot available the computer will make its move
                 if (count < 5 && winner == false) {
                     computerMove();
                 }

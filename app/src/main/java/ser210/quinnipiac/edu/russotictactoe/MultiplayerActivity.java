@@ -1,19 +1,28 @@
 package ser210.quinnipiac.edu.russotictactoe;
 
+/**
+ * Created by Mark Russo on 2/12/18.
+ * Class Runs the main multiplayer Activity
+ * Game is set up different from TTTActivity
+ * Multiplayer does not use ITicTacToe
+ * Combines TTTActivity and TicTacToe.java
+ * SER210
+ */
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MultiplayerActivity extends Activity {
+    //instance variables
     private int[][] board;
     private boolean playerMove;
-    int x = 0;
-    int y = 0;
+    private  int x = 0;
+    private int y = 0;
 
 
     @Override
@@ -22,8 +31,9 @@ public class MultiplayerActivity extends Activity {
         setContentView(R.layout.activity_multiplayer);
         board = new int[3][3];
         playerMove = true;
+        //Displays the game type at the top of the screen
         TextView result = (TextView) findViewById(R.id.User);
-        result.setText("Multiplayer");
+        result.setText("Multiplayer Mode");
     }
 
     // Set up the game board and make moves
@@ -81,23 +91,18 @@ public class MultiplayerActivity extends Activity {
 
         }
 
-        //if space is available place x
+        //if space is available place x on the button that user has clicked
         Button btn = (Button) findViewById(id);
         TextView move = (TextView) findViewById(R.id.UserTurn);
         if (playerMove == true) {
-            //btn.setText("x");
             btn.setBackgroundResource(R.drawable.ex);
             board[x][y] = 1;
             move.setText("O Turn!");
             playerMove = false;
 
-            //player two moves
+            //player makes a move
         } else if (playerMove == false) {
             move.setText("X Turn!");
-            int xCoord = (int) (Math.random() * 9) / 3;
-            int yCoord = (int) (Math.random() * 9) % 3;
-            //b[xCoord][yCoord].setText("0");
-            //btn.setText("O");
             btn.setBackgroundResource(R.drawable.lettero);
             board[x][y] = 2;
             playerMove = true;
@@ -309,11 +314,13 @@ public class MultiplayerActivity extends Activity {
     }
 
 
+    //clears the game board when clicked, called after game ends
     public void onClickClear(View view){
             clearBoard();
 
         }
 
+        //Menu button click, takes the user to the home screen
     public void onClickMenu(View view){
         finish();
     }

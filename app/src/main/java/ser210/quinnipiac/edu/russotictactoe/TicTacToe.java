@@ -95,9 +95,11 @@ public class TicTacToe implements ITicTacToe{
              * location using the random number generated in getComputerMove
              */
         }
+
         if (board[computerMove / 3][computerMove % 3] == EMPTY) {
             board[computerMove / 3][computerMove % 3] = 2;
 
+            //return the position on the board. used for the buttons called in TTTActivity
             if (computerMove / 3 == 0 && computerMove % 3 == 0){
                 computerMove = 0;
             }
