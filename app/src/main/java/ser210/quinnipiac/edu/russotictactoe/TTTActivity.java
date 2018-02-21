@@ -85,6 +85,8 @@ public class TTTActivity extends Activity {
                 }
                 // btn.setBackgroundResource(R.drawable.ex);
                 move.setText("Players Turn");
+                //Prof. Ruby this code is very repetative. it should go in a parameterized method and all buttons should be stored
+                //in an array 
                 if (view.getId() == btn1.getId()) {
                     game.setMove(1, 0);
                     findViewById(R.id.one).setBackgroundResource(R.drawable.ex);
@@ -159,6 +161,7 @@ public class TTTActivity extends Activity {
             public void run() {
                  int aiMove = game.getComputerMove();
 
+                //Prof. Ruby: again lots of unnecessary repetition here.
                 //checks move that computer has generated and sets the image
                if (aiMove == 0) {
                     findViewById(R.id.one).setBackgroundResource(R.drawable.lettero);
